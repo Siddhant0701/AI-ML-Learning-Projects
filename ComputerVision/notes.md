@@ -1,0 +1,3 @@
+- How to use callbacks to stop training
+- A simple Computer Vision Model that doesn't account for features and only pixel values.
+- Not A CNN
