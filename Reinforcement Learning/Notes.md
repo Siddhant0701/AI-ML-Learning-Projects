@@ -39,3 +39,15 @@ Each next action and reward has a transition probability.
 - Exploration vs Exploitation
 - Epsilon Greedy Strategy to choose between exploitation and exploration
 - Weighted sum along with learning rate in order to update q values and then get the optimal policy.
+
+<br/>
+
+### Deep Q Learning
+
+<br/>
+- DQN networks are usually Convolutional Layers and Dense Layers.
+- We use a bunch of sequential snapshots from the game and feed it into the network as a state. The network then outputs the optimal q-value.
+- Two forward passes are before doing a gradient update. (One for current state and one for next state)
+- Next state value is used as comparison to compute.
+- To avoid targets and estimates fromc hasing each other in an unstable way, we freeze the weights for the second pass in a "cloned" network (target network) of the "policy network"
+- This is done a for 'x' number of timestamps and x is another hyperparameter. 
