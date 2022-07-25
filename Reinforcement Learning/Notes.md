@@ -33,6 +33,13 @@ Each next action and reward has a transition probability.
 
 <br/>
 
+### Deterministic vs Stochastic Policies
+
+- Deterministic policies are one in which the agent takes the best possible action everytime.
+- Stochastic policies are one in which the agent can take different action based on the probability of each action. These probabilities are dependant upon the expected value from each return.
+  
+It is better to use stochastic policies for training as it allows for exploration.
+
 ### Q-Learning
 
 <br/>
